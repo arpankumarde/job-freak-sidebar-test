@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Freak Side Navigation</title>
+
+    <!--Internal resources-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--External resources-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+
+<body class="flex h-screen">
+    <aside class="flex flex-col gap-2 border-r p-2 max-h-screen w-72 overflow-y-auto">
+        <button type="button" id="defaultOpen"
+            class="inline-flex items-center gap-2 rounded-lg w-full tabLinks p-2 py-3 dark:text-white hover:bg-gray-200 hover:shadow-lg dark:hover:bg-gray-700"
+            onclick="setTab(event,'home')">
+            <svg aria-hidden="true"
+                class="flex-shrink-0 w-6 h-6 text-gray-700 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+            </svg>
+            <span>Home</span>
+        </button>
+        <button type="button"
+            class="inline-flex items-center gap-2 rounded-lg w-full tabLinks p-2 py-3 dark:text-white hover:bg-gray-200 hover:shadow-lg dark:hover:bg-gray-700"
+            onclick="setTab(event,'contact')">
+            <svg aria-hidden="true"
+                class="flex-shrink-0 w-6 h-6 text-gray-700 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+            </svg>
+            <span>Contact</span>
+        </button>
+        <button type="button"
+            class="inline-flex items-center justify-between rounded-lg w-full tabLinks p-2 py-3 dark:text-white hover:bg-gray-200 hover:shadow-lg dark:hover:bg-gray-700"
+            onclick="setTab(event,'guide')">
+            <span class="inline-flex gap-2">
+                <svg aria-hidden="true"
+                    class="flex-shrink-0 w-6 h-6 text-gray-700 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                    fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z" />
+                </svg>
+                <span>Guide</span>
+            </span>
+            <span
+                class="hidden sm:inline-flex items-center justify-center px-2 py-0.25 ml-3 text-sm font-medium text-blue-800 bg-blue-200 rounded-full dark:bg-blue-900 dark:text-blue-300">
+                New
+            </span>
+        </button>
+    </aside>
+
+    <main class="h-screen overflow-y-auto w-full scrollbar-hide" id="view">
+        <div class="tab p-2 text-right">
+            <section class="tabContent" id="home">
+                <h1 class="text-3xl font-bold py-4">
+                    HOME PAGE
+                </h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo minus consequuntur vel, eligendi
+                    veniam doloribus. Inventore, laudantium minima? Necessitatibus quam quia doloribus illo libero
+                    dolorem eveniet laudantium ex, rerum tempora magnam assumenda ipsam quidem cupiditate sint nulla
+                    aliquam voluptatem. Explicabo iure placeat esse numquam expedita ipsam, et harum dolorem, tempore,
+                    quod totam maxime aperiam commodi mollitia. Ut sequi impedit enim architecto harum corporis omnis
+                    incidunt laboriosam, eum voluptates rem delectus excepturi cumque! Officiis, eveniet minus! Sed
+                    expedita et, repellendus sunt soluta sit facere adipisci accusantium, laudantium cumque labore
+                    asperiores nobis officia optio provident omnis quaerat aliquam maiores numquam deleniti praesentium
+                    sapiente? Quos earum, laborum nihil alias ratione numquam sequi nulla doloremque non commodi, sint
+                    aliquid et rerum. Minima quos incidunt cum, expedita inventore eveniet eius possimus necessitatibus
+                    provident eaque debitis laborum saepe deserunt impedit, dolore illo quae corrupti officiis quod
+                    delectus! Dolor unde totam iusto ex, obcaecati, quasi deserunt voluptatem, recusandae non velit
+                    minima molestiae est debitis error iure fuga delectus nisi sint. Iusto numquam minima repellendus
+                    aspernatur? Perferendis dicta quaerat at! Dolorum ratione ullam nisi asperiores eveniet? Nulla esse
+                    consequatur pariatur nisi. Nobis consequatur inventore porro exercitationem fugit maiores delectus
+                    accusantium quia aliquid distinctio labore veniam, esse consectetur eos harum officiis consequuntur
+                    odit voluptatem obcaecati! Corporis voluptate molestias molestiae vel cupiditate facere perspiciatis
+                    cumque voluptates culpa, excepturi, pariatur, iusto modi neque repellat minima ducimus dolorem
+                    dolorum! Consequatur provident laboriosam excepturi perspiciatis voluptas expedita iure aut ducimus
+                    enim, sit accusantium dicta delectus minus rem accusamus velit eos neque tenetur asperiores
+                    cupiditate laborum animi. Cumque dicta accusantium quas ratione in ducimus porro sit. Reprehenderit,
+                    corrupti quaerat sunt neque nam nostrum magni perferendis aliquam repudiandae consectetur doloribus
+                    cupiditate ullam sint quisquam consequatur voluptate voluptatibus aspernatur! Quo sit pariatur
+                    laborum sint quaerat fugit necessitatibus aperiam magnam repudiandae, libero dolor esse! Modi eum
+                    consequuntur non quam rem porro et recusandae voluptates, velit libero. Pariatur eum, possimus
+                    obcaecati tempora repudiandae quo molestias repellendus temporibus aspernatur labore placeat illo
+                    praesentium fugiat similique adipisci debitis iure atque architecto velit dolor quae? Rerum, totam
+                    nemo. Fugiat illo cum facere ullam, nihil aspernatur nam vero neque sunt suscipit iste!
+                </p>
+            </section>
+            <section class="tabContent" id="contact">
+                <h1 class="text-3xl font-bold py-4">
+                    CONTACT US
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim amet pariatur necessitatibus quasi,
+                    temporibus nemo quisquam veniam quaerat omnis magni quod, expedita repellat! Quas, dolores ut neque
+                    accusamus hic autem tempora dolorum voluptatibus quod, doloremque, ducimus alias! Aut doloribus
+                    perspiciatis hic repudiandae nemo! Dolores officiis nihil in tempore. Adipisci asperiores libero
+                    repudiandae, laborum in nobis incidunt hic distinctio cumque quasi. Illum ipsa iste similique
+                    nostrum ducimus suscipit necessitatibus a fugiat vitae aliquam dicta minus debitis, voluptas
+                    deleniti neque nemo molestiae, nulla, natus nam animi distinctio. Impedit aperiam iste dignissimos
+                    tenetur vero, iure odit quae corrupti! Reprehenderit eius, sint eaque illum officiis iure error
+                    earum nihil, et voluptate, in sunt animi saepe corrupti assumenda voluptatem? Explicabo quia eaque
+                    dicta culpa facere ab quis cupiditate odio natus maiores? Rerum laboriosam architecto necessitatibus
+                    deleniti ullam quisquam dolorum minus porro impedit rem recusandae, fuga eveniet a odio dolor
+                    deserunt. Suscipit iste tempora perspiciatis provident sequi nostrum, qui, blanditiis eligendi
+                    obcaecati illo doloremque. Nam illo ipsa commodi error, alias voluptas culpa perferendis aliquid,
+                    repellat exercitationem possimus quo soluta dolor numquam ea et ipsam corporis rerum accusantium
+                    similique laborum, aspernatur cupiditate fugit dolores! Soluta aliquid non quas enim ducimus tenetur
+                    provident cupiditate aspernatur expedita. Exercitationem error dolor non accusamus, odit magnam
+                    similique beatae magni nesciunt porro consectetur, laboriosam corrupti ea. Eligendi, corrupti
+                    aliquid accusamus voluptas sequi et quia ab commodi ullam consectetur, ipsum modi voluptatem.
+                    Necessitatibus quos a ducimus facere corrupti provident recusandae atque odit, adipisci eligendi
+                    dolorem quod quam, sint dolorum sed esse assumenda ex amet. Inventore expedita esse aperiam
+                    laboriosam reiciendis ex, nihil perferendis! Molestiae atque sed impedit iure ut vitae totam
+                    necessitatibus, consectetur blanditiis molestias et quod nam mollitia? Suscipit autem officia ipsa
+                    repudiandae ipsam ratione fugiat pariatur, amet consequatur nobis consequuntur distinctio ab omnis!
+                    Deleniti consectetur, deserunt nobis explicabo provident placeat eum quibusdam omnis blanditiis a
+                    iure minus expedita! Officiis quidem aliquam deserunt voluptate at sint repellat amet officia
+                    accusamus magnam illum recusandae qui ipsam nam eum, velit eius aspernatur dolore voluptatem id
+                    facilis saepe aperiam ad. Quos dolorum quod ipsum, maiores, natus dolore qui doloremque, nulla
+                    possimus voluptate distinctio commodi totam aut dolor soluta vel libero eligendi? Iusto id
+                    repudiandae, amet ipsa perspiciatis facilis laborum doloribus provident, distinctio earum nobis
+                    voluptatem quis, consequatur sint atque deserunt!
+                </p>
+            </section>
+            <section class="tabContent" id="guide">
+                <h1 class="text-3xl font-bold py-4">
+                    GUIDE
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt quidem tempore obcaecati mollitia
+                    excepturi placeat commodi ipsum exercitationem, tenetur, nulla illum quaerat? Eveniet explicabo
+                    aspernatur consectetur voluptates dolore ullam cumque possimus! Quasi iste recusandae asperiores,
+                    repellendus molestiae temporibus aspernatur? Sapiente consectetur delectus aperiam obcaecati
+                    exercitationem quam, saepe unde sint libero asperiores rerum eius eaque aliquid earum accusantium
+                    vero nulla laborum expedita modi corrupti aut explicabo! Dicta magni vero ratione, laboriosam
+                    accusamus soluta itaque maxime rerum iste explicabo. Consequatur odit eveniet vel unde nulla
+                    delectus beatae sequi quas, assumenda recusandae asperiores sed nisi veniam excepturi? Laboriosam
+                    dolorum eveniet quas eum officiis in consectetur voluptatem voluptate ducimus similique. Sint
+                    voluptatum quas molestiae? Amet est officia veniam vel dicta rem doloribus obcaecati libero
+                    asperiores, maxime repudiandae facilis ea ipsum ipsam reprehenderit! Modi, qui porro provident
+                    exercitationem neque velit, et animi quo maiores obcaecati eligendi aut labore eius sapiente autem
+                    iste enim! Optio labore officia quo reprehenderit hic voluptatem enim fugiat voluptas nihil illo.
+                    Totam provident maiores delectus mollitia rerum a illum maxime dignissimos odio. Repudiandae
+                    consequatur repellendus ex quos, voluptatem distinctio mollitia magnam at alias? Quod laudantium
+                    eligendi recusandae minima consequuntur autem qui tempora fugit reprehenderit assumenda saepe
+                    voluptatem, ab, deleniti, doloremque temporibus a! Eum rerum dolor perferendis, neque distinctio
+                    numquam nostrum architecto odit consequatur, dolorum nam officiis ipsam dicta laudantium quibusdam
+                    fuga minima repellat, est deserunt eaque fugit atque odio voluptates! Tenetur voluptatem veritatis
+                    pariatur eos omnis aspernatur sit repellat cum id aut facilis, porro nobis quam delectus. Molestiae
+                    cupiditate hic voluptatem laboriosam atque, voluptatibus itaque aliquam reiciendis saepe numquam,
+                    aliquid provident? Quae sapiente eveniet similique fugit iste. Quos eos praesentium sint rerum, ipsa
+                    laborum voluptate provident culpa consequatur eum maiores illum est et quam nihil repellendus
+                    impedit ducimus ex quisquam id fuga totam dolores ipsum exercitationem. Consectetur, quia. Quasi
+                    nihil minus aut suscipit inventore. Eos dolorum voluptate ipsa repudiandae animi. Veniam
+                    exercitationem sunt sapiente amet excepturi tempora, voluptates laboriosam, molestias quo incidunt
+                    ducimus dolorem nam, asperiores in. Deserunt consequuntur rem sed, ducimus sunt odio officiis,
+                    expedita veniam amet nemo quia minima sit enim, magni impedit. Iure eum facere cum eligendi incidunt
+                    voluptatum labore blanditiis, deserunt nam, at cupiditate maxime sit laborum error corrupti aut
+                    reprehenderit odit qui consequatur.
+                </p>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
