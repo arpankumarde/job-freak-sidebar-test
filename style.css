@@ -4,46 +4,49 @@
 
 /* For Webkit Browsers: Chrome, Safari, Opera */
 .scrollbar-hide::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .scrollbar-hide {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 button.active {
-    background-color: rgb(209, 213, 219);
+  background-color: rgb(209, 213, 219);
+  --tw-shadow: ;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000,
+    0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 button.active:hover {
-    background-color: rgb(209, 213, 219);
+  background-color: rgb(209, 213, 219);
 }
 
 .tabContent {
-    -webkit-animation: fadeEffect 1s;
-    animation: fadeEffect 1s;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
 }
 
 /* Fade in tabs */
 @-webkit-keyframes fadeEffect {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeEffect {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }

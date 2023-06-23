@@ -14,7 +14,7 @@
 </head>
 
 <body class="flex h-screen">
-    <aside class="flex flex-col gap-2 border-r p-2 max-h-screen w-72 overflow-y-auto">
+    <aside class="flex flex-col gap-2 border-r p-2 max-h-screen w-72 overflow-y-auto select-none">
         <button type="button" id="defaultOpen"
             class="inline-flex items-center gap-2 rounded-lg w-full tabLinks p-2 py-3 dark:text-white hover:bg-gray-200 hover:shadow-lg dark:hover:bg-gray-700"
             onclick="setTab(event,'home')">
@@ -59,11 +59,14 @@
     </aside>
 
     <main class="h-screen overflow-y-auto w-full scrollbar-hide" id="view">
-        <div class="tab p-2 text-right">
+        <div class="tab p-2 pr-4 text-right">
             <section class="tabContent" id="home">
-                <h1 class="text-3xl font-bold py-4">
-                    HOME PAGE
-                </h1>
+                <header class="py-4">
+                    <h1 class="text-3xl font-bold">
+                        HOME PAGE
+                    </h1>
+                    <h2 class="text-sm">Homepage of Test Sidebar Navigation Page</h2>
+                </header>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo minus consequuntur vel, eligendi
                     veniam doloribus. Inventore, laudantium minima? Necessitatibus quam quia doloribus illo libero
@@ -96,9 +99,12 @@
                 </p>
             </section>
             <section class="tabContent" id="contact">
-                <h1 class="text-3xl font-bold py-4">
-                    CONTACT US
-                </h1>
+                <header class="py-4">
+                    <h1 class="text-3xl font-bold">
+                        CONTACT US
+                    </h1>
+                    <h2 class="text-sm">Contact us for more information</h2>
+                </header>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim amet pariatur necessitatibus quasi,
                     temporibus nemo quisquam veniam quaerat omnis magni quod, expedita repellat! Quas, dolores ut neque
@@ -133,9 +139,12 @@
                 </p>
             </section>
             <section class="tabContent" id="guide">
-                <h1 class="text-3xl font-bold py-4">
-                    GUIDE
-                </h1>
+                <header class="py-4">
+                    <h1 class="text-3xl font-bold">
+                        GUIDE
+                    </h1>
+                    <h2 class="text-sm">Go through the docs to use our services better</h2>
+                </header>
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt quidem tempore obcaecati mollitia
                     excepturi placeat commodi ipsum exercitationem, tenetur, nulla illum quaerat? Eveniet explicabo
