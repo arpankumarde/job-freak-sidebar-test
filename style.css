@@ -14,14 +14,34 @@
   /* Firefox */
 }
 
-button.active {
+body {
+  height: 100dvh;
+  display: flex;
+}
+
+nav {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  max-height: 100dvh;
+  border-right: 1px solid #e4e4e4;
+  overflow-y: auto;
+  user-select: none;
+}
+
+nav button {
+  display: inline-flex;
+  align-items: center;
+}
+
+nav button.active {
   background-color: rgb(209, 213, 219);
   --tw-shadow: ;
   box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000,
     0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-button.active:hover {
+nav button.active:hover {
   background-color: rgb(209, 213, 219);
 }
 

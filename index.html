@@ -11,12 +11,13 @@
 
     <!--External resources-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body class="flex h-screen">
-    <aside class="flex flex-col gap-2 border-r p-2 max-h-screen w-72 overflow-y-auto select-none">
+<body>
+    <nav class="gap-2 w-72">
         <button type="button" id="defaultOpen"
-            class="inline-flex items-center gap-2 rounded-lg w-full tabLinks p-2 py-3 dark:text-white hover:bg-gray-200 hover:shadow-lg dark:hover:bg-gray-700"
+            class="gap-2 rounded-lg w-full tabLinks p-2 py-3 hover:bg-gray-200 hover:shadow-lg dark:hover:bg-gray-700"
             onclick="setTab(event,'home')">
             <svg aria-hidden="true"
                 class="flex-shrink-0 w-6 h-6 text-gray-700 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -27,7 +28,7 @@
             <span>Home</span>
         </button>
         <button type="button"
-            class="inline-flex items-center gap-2 rounded-lg w-full tabLinks p-2 py-3 dark:text-white hover:bg-gray-200 hover:shadow-lg dark:hover:bg-gray-700"
+            class="gap-2 rounded-lg w-full tabLinks p-2 py-3 hover:bg-gray-200 hover:shadow-lg dark:hover:bg-gray-700"
             onclick="setTab(event,'contact')">
             <svg aria-hidden="true"
                 class="flex-shrink-0 w-6 h-6 text-gray-700 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -39,7 +40,18 @@
             <span>Contact</span>
         </button>
         <button type="button"
-            class="inline-flex items-center justify-between rounded-lg w-full tabLinks p-2 py-3 dark:text-white hover:bg-gray-200 hover:shadow-lg dark:hover:bg-gray-700"
+            class="gap-2 rounded-lg w-full tabLinks p-2 py-3 hover:bg-gray-200 hover:shadow-lg dark:hover:bg-gray-700"
+            onclick="setTab(event,'info')">
+            <svg aria-hidden="true"
+                class="flex-shrink-0 w-5 h-5 text-gray-700 transition duration-75 group-hover:text-gray-900"
+                fill="currentColor" viewBox="0 0 512 512">
+                <path
+                    d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+            </svg>
+            <span>Information</span>
+        </button>
+        <button type="button"
+            class="justify-between rounded-lg w-full tabLinks p-2 py-3 hover:bg-gray-200 hover:shadow-lg dark:hover:bg-gray-700"
             onclick="setTab(event,'guide')">
             <span class="inline-flex gap-2">
                 <svg aria-hidden="true"
@@ -56,7 +68,7 @@
                 New
             </span>
         </button>
-    </aside>
+    </nav>
 
     <main class="h-screen overflow-y-auto w-full scrollbar-hide" id="view">
         <div class="tab p-2 pr-4 text-right">
@@ -65,7 +77,7 @@
                     <h1 class="text-3xl font-bold">
                         HOME PAGE
                     </h1>
-                    <h2 class="text-sm">Homepage of Test Sidebar Navigation Page</h2>
+                    <h2 class="text-sm">Homepage of the site</h2>
                 </header>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo minus consequuntur vel, eligendi
@@ -103,7 +115,7 @@
                     <h1 class="text-3xl font-bold">
                         CONTACT US
                     </h1>
-                    <h2 class="text-sm">Contact us for more information</h2>
+                    <h2 class="text-sm">Connect with us</h2>
                 </header>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim amet pariatur necessitatibus quasi,
@@ -138,12 +150,34 @@
                     voluptatem quis, consequatur sint atque deserunt!
                 </p>
             </section>
+            <section class="tabContent" id="info">
+                <header class="py-4">
+                    <h1 class="text-3xl font-bold">
+                        INFO
+                    </h1>
+                    <h2 class="text-sm">More information</h2>
+                </header>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sit error tenetur animi assumenda, rem
+                    porro, consectetur harum dolore et maiores enim facere quae ex delectus libero magni beatae incidunt
+                    voluptas nostrum quasi similique aspernatur quisquam eius. Corporis pariatur blanditiis
+                    necessitatibus illum possimus dolor. Qui eveniet aperiam nihil at harum in aliquid laboriosam cumque
+                    ullam magnam? Id ea sequi aut beatae accusamus corrupti nesciunt quis reprehenderit placeat ipsam
+                    similique modi, repellendus, porro nihil velit molestias, quod earum commodi? Maxime explicabo
+                    soluta illo nesciunt nam? Asperiores praesentium, ut assumenda perferendis earum veniam quae alias
+                    eaque possimus a dolor. Blanditiis magni laudantium dolorem libero sequi earum, delectus ipsam
+                    dolore non est, porro quos expedita ratione quod possimus laboriosam maxime, eum neque. Doloremque,
+                    perspiciatis obcaecati voluptatem tenetur nisi fugiat itaque animi quisquam natus perferendis,
+                    dignissimos ea expedita explicabo sequi id ipsa porro, quaerat iusto. Reiciendis vero atque minima
+                    cupiditate odit est doloribus cum tempora, eligendi commodi aspernatur eos ad facilis?
+                </p>
+            </section>
             <section class="tabContent" id="guide">
                 <header class="py-4">
                     <h1 class="text-3xl font-bold">
                         GUIDE
                     </h1>
-                    <h2 class="text-sm">Go through the docs to use our services better</h2>
+                    <h2 class="text-sm">Go through the docs for better understanding</h2>
                 </header>
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt quidem tempore obcaecati mollitia
